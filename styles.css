@@ -1,0 +1,721 @@
+body {
+    background-color: rgb(97, 63, 91);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    top: 1%;
+    right: 2%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    transition: all ease .40s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: rgb(172, 104, 199);
+}
+ 
+.head {
+    text-align: left;
+    left: 0;
+}
+
+.head h1 {
+    position: absolute;
+    top: -4%;
+    left: 8%;
+    align-items: first baseline;
+    font-size:50px;
+    color: violet;
+    font-weight: 600;
+}
+
+.head h1:hover {
+    -webkit-text-stroke: 2x #d8461a;
+    color: transparent;
+}
+
+.head a{
+    position: absolute;
+    top: 0;
+    left: 3%;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-size: 13px;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 10px 40px;
+    margin-top: 65px;
+}
+
+.home-content {
+    color: violet;
+    font-family: sans-serif;
+}
+.home-content h1{
+    position: absolute;
+    top: 29%;
+    right: 10%;
+    font-size: 65px;
+    
+}
+
+.home-content h1 span {
+    color: rgb(57, 6, 78);
+}
+
+.home-content h1:hover {
+    color: black;
+    transition: 1s all ease ;
+}
+
+.home-content h3{
+    font-family: sans-serif;
+    color: violet;
+    font-size: 25px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 43%;
+    right: 20%;
+}
+
+.home-content h4  {
+    font-family: sans-serif;
+    color: violet;
+    letter-spacing: 2px;
+    font-size: 20px;
+    position: fixed;
+    top: 28%;
+    right: 27%;
+}
+
+.home-content p {
+    font-family: sans-serif;
+    color: violet;
+    font-size: 30px;
+    margin-top: 2%;
+    position: fixed;
+    top: 48%;
+    right: 14%;
+}
+
+.image img {
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    width: 550px;
+    height: 500px;
+}
+
+.social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid violet;
+    border-radius: 10%;
+    font-size: 20px;
+    color: white;
+    transition: .5s ease;
+    margin: 30px 15px 30px 0;
+}
+
+.social a:hover {
+    background: darkviolet;
+    color: black;
+}
+
+.social .facebook {
+    position: absolute;
+    bottom: 20%;
+    right: 31%;
+}
+
+.social .instagram {
+    position: absolute;
+    bottom: 20%;
+    right: 27%;
+}
+
+.form {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  height: 350px;
+  background-color: rgb(110, 57, 110);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 90%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 90%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgb(64, 7, 88);
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  bottom: 4%;
+  left: 6%;
+}
+    
+.cont-info {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 17%;
+  left: 24.3%;
+}
+
+.cont-info1 {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 37%;
+  right: 20%;
+}
+
+.number a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid violet;
+  border-radius: 10%;
+  font-size: 20px;
+  color: white;
+  transition: .5s ease;
+  margin: 30px 15px 30px 0;
+  position: absolute;
+  right: 35%;
+  top: 43%;
+}
+
+.number p {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  right: 22%;
+  top: 44%;
+}
+
+.cont-info2 {
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 55%;
+  right: 20%;
+}
+
+.social1 a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid violet;
+  border-radius: 10%;
+  font-size: 20px;
+  color: white;
+  transition: .5s ease;
+  margin: 30px 15px 30px 0;
+}
+
+.social1 .facebook {
+  position: absolute;
+  bottom: 20%;
+  right: 33%;
+}
+
+.social1 .instagram {
+  position: absolute;
+  bottom: 20%;
+  right: 29%;
+}
+
+button {
+    border: 2px solid darkviolet;
+    background-color: rgb(63, 10, 63);
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    right: 28%;
+    bottom: 32%;
+}
+
+.about-content {
+    color: white;
+    font-family: sans-serif;
+}
+
+.about-content h1 {
+    font-size: 35px;
+    text-decoration: wavy underline;
+    position: absolute;
+    left: 5%;
+    top: 12%;
+}
+
+.about-content h1:hover {
+    color: rgb(69, 10, 94);
+}
+
+.about-content p {
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 21%;
+    position: absolute;
+    left: 2%;
+    top: 22%;
+}
+
+.video .vid{
+    width: 220px;
+    height: 390px;
+    border: 3px solid darkviolet;
+    border-radius: 20px;
+    position: absolute;
+    right: 3%;
+    top: 25%;
+}
+
+.experience {
+    color: white;
+    font-family: sans-serif;
+}
+
+.experience h1 {
+    font-size: 35px;
+    text-decoration: wavy underline;
+    position: absolute;
+    left: 5%;
+    bottom: 22%;
+}
+
+.experience h1:hover {
+    color: rgb(69, 10, 94);
+}
+
+.experience p {
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 21%;
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+}
+
+.career {
+    color: white;
+    font-family: sans-serif;
+}
+
+.career h1 {
+    font-size: 35px;
+    text-decoration: wavy underline;
+    position: absolute;
+    left: 5%;
+    top: 47%;
+}
+
+.career h1:hover {
+    color: rgb(69, 10, 94);
+}
+
+.career p {
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 21%;
+    position: absolute;
+    left: 2%;
+    top: 57%;
+}
+
+.hobby {
+    color: white;
+    font-family: sans-serif;
+    text-align: justify;
+    
+}
+
+.hobby h1 {
+    font-size: 40px;
+    text-decoration: wavy underline;
+    position: absolute;
+    top: 17%;
+    left: 27%;
+}
+
+.hobby h1:hover {
+    color: rgb(69, 10, 94);
+}
+
+.hobby p {
+    font-size: 30px;
+    text-align: justify;
+    margin-right: 35%;
+    position: absolute;
+    left: 5%;
+    bottom: 13%;
+}
+
+.vol {
+    height: 70%;
+    width: 25%;
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    border-radius: 20px;
+    border: 5px solid darkviolet;
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+
+  .pic1 {
+    width: 350px;
+    height: 280px;
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+    position: absolute;
+    bottom: 24%;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+    position: absolute;
+    bottom: 5%;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+
+  .card1 {
+    width: 350px;
+    height: 400px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+  }
+  
+  .card-image1 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image1:hover {
+    transform: scale(0.98);
+  }
+
+  .pic2 {
+    width: 350px;
+    height: 280px;
+  }
+  
+  .category1 {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+    position: absolute;
+    bottom: 24%;
+  }
+  
+  .category1:hover {
+    cursor: pointer;
+  }
+  
+  .heading1 {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+    position: absolute;
+    bottom: 5%;
+  }
+  
+  .heading1:hover {
+    cursor: pointer;
+  }
+  
+  .author1 {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name1 {
+    font-weight: 600;
+  }
+  
+  .name1:hover {
+    cursor: pointer;
+  }
+  
+  .card2 {
+    width: 350px;
+    height: 400px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+    position: absolute;
+    top: 20%;
+    right: 6%;
+  }
+  
+  .card-image2 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image2:hover {
+    transform: scale(0.98);
+  }
+
+  .pic3 {
+    width: 350px;
+    height: 280px;
+  }
+  
+  .category2 {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+    position: absolute;
+    bottom: 24%;
+  }
+  
+  .category2:hover {
+    cursor: pointer;
+  }
+  
+  .heading2 {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+    position: absolute;
+    bottom: 5%;
+  }
+  
+  .heading2:hover {
+    cursor: pointer;
+  }
+  
+  .author2 {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name2 {
+    font-weight: 600;
+  }
+  
+  .name2:hover {
+    cursor: pointer;
+  }
+
+.educ {
+  color: white;
+  font-family: sans-serif;
+}
+
+.educ h1 {
+  font-size: 35px;
+  text-decoration: wavy underline;
+  position: absolute;
+  top: 10%;
+  left: 4%;
+}
+
+.educ h1:hover {
+  color: rgb(53, 3, 75);
+}
+
+.educ p {
+  font-size: 20px;
+  text-align: justify;
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  margin-right: 4%;
+}
+
+.educ1 {
+  color: white;
+  font-family: sans-serif;
+}
+
+.educ1 h1 {
+  font-size: 35px;
+  text-decoration: wavy underline;
+  position: absolute;
+  top: 42%;
+  left: 4%;
+}
+
+.educ1 h1:hover {
+  color: rgb(53, 3, 75);
+}
+
+.educ1 p {
+  font-size: 20px;
+  text-align: justify;
+  position: absolute;
+  bottom: 2%;
+  left: 4%;
+  margin-right: 4%;
+}
+
+.skill {
+  color: white;
+  font-family: sans-serif;
+}
+
+.skill h1 {
+  font-size: 35px;
+  text-decoration: wavy underline;
+  position: absolute;
+  top: 18%;
+  left: 4%;
+}
+
+.skill p {
+  font-size: 25px;
+  text-align: justify;
+  position: absolute;
+  top: 28%;
+  left: 4%;
+  margin-right: 4%;
+}
+
+table {
+  font-size: 30px;
+  border: solid rgb(100, 9, 77);
+  position: absolute;
+  bottom: 13%;
+  left: 28%;
+}
